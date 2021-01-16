@@ -1,0 +1,87 @@
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+$pewter-blue: #93a7cc;
+$dark-slate-gray: #2B4141;
+$space-cadet: #2C2C54;
+$timberwolf: #CFDBD5;
+$eerieblack: #242423;
+
+body {
+  background-color: $timberwolf;
+}
+
+.container-header {
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  background-color: #E8EDEB;
+  justify-content: space-around;
+  padding: 24px;
+  box-shadow: 0px 0px 10px 0px #b4bfb9;
+}
+
+.container-header a {
+  text-decoration: none;
+  color: $eerieblack;
+}
+
+.container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 16px 30px;
+  margin: 100px auto;
+  border-radius: 6px;
+    background: linear-gradient(145deg, #ddeae4, #bac5c0);
+    box-shadow:  5px 5px 12px #b4bfb9,
+                -5px -5px 12px #eaf7f1;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 a {
+  font-family: 'Open Sans', sans-serif;
+  color: #0B3142;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3 a:hover {
+  text-decoration: none;
+  color: $space-cadet;
+}
+
+.form-submit {
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.container-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-options a {
+  text-decoration: none;
+  color: $eerieblack;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding: 12px;
+  width: 100px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ddeae4, #bac5c0);
+  box-shadow:  5px 5px 10px #bec9c4,
+             -1px -1px 8px #e0ede6;
+}
+
+.container-options a:hover {
+      background: #CFDBD5;
+      box-shadow: inset 5px 5px 10px #bec9c4,
+      inset -5px -5px 10px #e0ede6;
+}
