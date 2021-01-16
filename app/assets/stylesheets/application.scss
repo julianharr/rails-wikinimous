@@ -8,7 +8,9 @@ $timberwolf: #CFDBD5;
 $eerieblack: #242423;
 
 body {
-  background-color: $timberwolf;
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container-header {
@@ -33,19 +35,20 @@ body {
   text-align: left;
   padding: 16px 30px;
   margin: 100px auto;
-  border-radius: 6px;
-    background: linear-gradient(145deg, #ddeae4, #bac5c0);
-    box-shadow:  5px 5px 12px #b4bfb9,
-                -5px -5px 12px #eaf7f1;
+  background: rgba( 185, 147, 214, 0.19 );
+  box-shadow: 0 8px 32px 0 rgba( 25, 38, 135, 0.12 );
+  backdrop-filter: blur(15px);
+  border-radius: 8px;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
 
 h3 a {
   font-family: 'Open Sans', sans-serif;
-  color: #0B3142;
+  color: #5e548e;
   font-weight: 700;
   font-size: 24px;
+
 }
 
 h3 a:hover {
@@ -75,13 +78,11 @@ h3 a:hover {
   padding: 12px;
   width: 100px;
   border-radius: 12px;
-  background: linear-gradient(145deg, #ddeae4, #bac5c0);
-  box-shadow:  5px 5px 10px #bec9c4,
-             -1px -1px 8px #e0ede6;
+  background: rgba( 185, 147, 214, 0.19 );
+  box-shadow: 0 8px 32px 0 rgba( 25, 38, 135, 0.12 );
 }
 
 .container-options a:hover {
-      background: #CFDBD5;
-      box-shadow: inset 5px 5px 10px #bec9c4,
-      inset -5px -5px 10px #e0ede6;
+      background: rgba( 185, 147, 214, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 25, 38, 135, 0.12 );
 }
