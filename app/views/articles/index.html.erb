@@ -1,11 +1,13 @@
 <div class="container-header">
-  <%= link_to 'Wikinimous', articles_path %>
+  <%= link_to 'NewAlbumSameArtist', articles_path %>
   <%= link_to 'New Article', new_article_path %>
 </div>
 
+<div class="container-main">
   <% @articles.each do |article| %>
   <div class="container">
     <h3><%= link_to article.title, article_path(article) %></h3>
     <p><%= article.content %></p>
   </div>
   <% end %>
+</div>

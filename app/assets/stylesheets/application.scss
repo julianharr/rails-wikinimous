@@ -17,10 +17,10 @@ body {
   display: flex;
   width: 100%;
   font-size: 20px;
-  background-color: #E8EDEB;
+  background-color: #FFFFFF;
   justify-content: space-around;
   padding: 24px;
-  box-shadow: 0px 0px 10px 0px #b4bfb9;
+  box-shadow: 0px 0px 5px 0px #000000;
 }
 
 .container-header a {
@@ -28,25 +28,50 @@ body {
   color: $eerieblack;
 }
 
+.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
 .container {
   width: 30%;
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 16px 30px;
+  padding: 0;
   margin: 100px auto;
   background: rgba( 185, 147, 214, 0.19 );
   box-shadow: 0 8px 32px 0 rgba( 25, 38, 135, 0.12 );
-  backdrop-filter: blur(15px);
   border-radius: 8px;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+    h3 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 32px;
+      margin: 16px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 8px 16px;
+      padding-bottom: 8px;
+    }
+    form {
+      padding: 25px;
+    }
+}
+
+.container img {
+  flex-shrink: 0;
+  max-width:100%;
+  max-height: 300px
 }
 
 h3 a {
   font-family: 'Open Sans', sans-serif;
-  color: #5e548e;
-  font-weight: 700;
+  color: #13293D;
+  font-weight: 600;
   font-size: 24px;
 
 }
@@ -65,6 +90,7 @@ h3 a:hover {
 }
 
 .container-options {
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
 }
